@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+</head>
+
+<body>
+  <!-- 引入公共页头 -->
+  <%= require("html-loader!../common/header/index.html") %>
+    <section class="banner-container">
+      <img src="/public/images/banner-about.jpg" class="pc">
+      <img src="/public/images/banner-about.jpg" class="m">
+    </section>
+    <section class="contact-container max-center">
+      <div class="title">联系我们</div>
+      <div class="content">
+        <div class="left-layout">
+          <div class="company">浓泰宏生农业科技有限公司</div>
+          <div class="contact">
+            <p>地址：抚州市漳浦县前亭镇桥仔头村上王107号</p>
+            <p>电话：15059620540</p>
+          </div>
+          <div class="qrcode">
+            <img src="/public/images/code.png" alt="扫码咨询">
+            <p>扫码咨询</p>
+          </div>
+        </div>
+        <div class="right-layout">
+          <div id="map" class="map" data-lat="24.241181" data-lng="117.971445" data-title="福建浓泰弘升科技有限公司"
+            data-content="福建省福州市漳浦县前亭镇桥仔头村上王107号"></div>
+        </div>
+      </div>
+    </section>
+    <!-- 引入公共页尾 -->
+    <%= require("html-loader!../common/footer/index.html") %>
+      <script type="text/javascript"
+        src="http://api.map.baidu.com/api?v=2.0&ak=xL6cMDfAP1LWxavjRBMlbtG2XwNbAhlW"></script>
+</body>
+
+</html>

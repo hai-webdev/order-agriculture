@@ -1,0 +1,59 @@
+@import "~@/assets/global.less";
+.banner-container {
+  img {
+    width: 100%;
+    &.m {
+      display: none;
+    }
+  }
+}
+.contact-container{
+  padding: 50px 0;
+  .title{
+    font-weight: bold;
+    font-size: 30px;
+    color:#4E5356;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .content{
+    display: flex;
+    .left-layout,
+    .right-layout{
+      width: 50%;
+    }
+    .left-layout{
+      .company{
+        font-size: 24px;
+        color:@mainColor;
+        margin-bottom: 30px;
+      }
+      .contact{
+        color:#999;
+        font-size: 14px;
+        p{
+          margin-bottom: 20px;
+        }
+      }
+      .qrcode{
+        width: 110px;
+        img{
+          width: 110px;
+          height: 110px;
+          margin-bottom: 10px;
+        }
+        p{
+          text-align: center;
+          color:#999;
+          font-size: 14px;
+        }
+      }
+    }
+    .right-layout{
+      .map{
+        height: 400px;
+      }
+    }
+  }
+}
+@import "./768.less" screen and (max-width:768px);

@@ -1,0 +1,98 @@
+@import "~@/assets/global.less";
+.footer-container {
+  background-color: #262626;
+  .foot-box {
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .company {
+      font-size: 24px;
+      color: #eb1d4e;
+      margin-bottom: 10px;
+    }
+    .tel {
+      font-size: 24px;
+      color: #fff;
+      margin-bottom: 10px;
+    }
+    .address {
+      font-size: 16px;
+      color: #fff;
+    }
+  }
+  .copyright {
+    font-size: 12px;
+    color: #999;
+    text-align: center;
+    padding: 10px 0;
+    a {
+      color: inherit;
+    }
+  }
+}
+.aside-container {
+  position: fixed;
+  z-index: 999;
+  right: 30px;
+  bottom: 10%;
+  .box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    svg{
+      width: 28px;
+      height: 28px;
+    }
+  }
+  .tel {
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 30px;
+    .info {
+      position: absolute;
+      display: none;
+      white-space: nowrap;
+      right: 80px;
+      background-color: #fff;
+      padding: 15px;
+      box-sizing: border-box;
+      border-radius: 4px;
+      font-size: 15px;
+      filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.2));
+      &::after {
+        content: "";
+        position: absolute;
+        right: -20px;
+        border-right: 10px solid transparent;
+        border-bottom: 10px solid transparent;
+        border-left: 10px solid #fff;
+        border-top: 10px solid transparent;
+      }
+    }
+    &:hover {
+      background-color: @mainColor;
+      .info {
+        display: block;
+      }
+      svg {
+        fill: #fff;
+      }
+    }
+    svg {
+      fill: #666;
+      
+    }
+  }
+  .to-top {
+    background-color: @mainColor;
+    transition: 0.6s;
+    &:hover {
+      transform: translateY(-5px);
+    }
+  }
+}
+@import "./768.less" screen and (max-width:768px);

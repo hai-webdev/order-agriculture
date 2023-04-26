@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+</head>
+
+<body>
+  <!-- 引入公共页头 -->
+  <%= require("html-loader!../common/header/index.html") %>
+    <section class="banner-container">
+      <img src="/public/images/banner-about.jpg" class="pc">
+      <img src="/public/images/banner-about.jpg" class="m">
+    </section>
+    <section class="product-container">
+      <div class="title-module">产品展示</div>
+      <ul class="product-list max-center">
+        <li class="product-item">
+          <a href="product_view.html">
+            <div class="img">
+              <img src="/public/images/product1.webp">
+            </div>
+            <div class="text">
+              <div class="title">南美白对虾养殖 包教包会</div>
+              <div class="price">￥0.00</div>
+              <span class="alert-show reserve">立即预约</span>
+            </div>
+          </a>
+        </li>
+        <li class="product-item">
+          <a href="product_view.html">
+            <div class="img">
+              <img src="/public/images/product2.webp">
+            </div>
+            <div class="text">
+              <div class="title">南美白对虾养殖 包教包会</div>
+              <div class="price">￥0.00</div>
+              <span class="alert-show reserve">立即预约</span>
+            </div>
+          </a>
+        </li>
+        <li class="product-item">
+          <a href="product_view.html">
+            <div class="img">
+              <img src="/public/images/product3.webp">
+            </div>
+            <div class="text">
+              <div class="title">南美白对虾养殖 包教包会</div>
+              <div class="price">￥0.00</div>
+              <span class="alert-show reserve">立即预约</span>
+            </div>
+          </a>
+        </li>
+        <li class="product-item">
+          <a href="product_view.html">
+            <div class="img">
+              <img src="/public/images/product4.webp">
+            </div>
+            <div class="text">
+              <div class="title">南美白对虾养殖 包教包会</div>
+              <div class="price">￥0.00</div>
+              <span class="alert-show reserve">立即预约</span>
+            </div>
+          </a>
+        </li>
+        <li class="product-item">
+          <a href="product_view.html">
+            <div class="img">
+              <img src="/public/images/product5.webp">
+            </div>
+            <div class="text">
+              <div class="title">南美白对虾养殖 包教包会</div>
+              <div class="price">￥0.00</div>
+              <span class="alert-show reserve">立即预约</span>
+            </div>
+          </a>
+        </li>
+        <li class="product-item">
+          <a href="product_view.html">
+            <div class="img">
+              <img src="/public/images/product6.webp">
+            </div>
+            <div class="text">
+              <div class="title">南美白对虾养殖 包教包会</div>
+              <div class="price">￥0.00</div>
+              <span class="alert-show reserve">立即预约</span>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </section>
+    <!-- 引入公共弹窗 -->
+    <%= require("html-loader!../common/alert_form/index.html") %>
+    <!-- 引入公共页尾 -->
+    <%= require("html-loader!../common/footer/index.html") %>
+</body>
+
+</html>
